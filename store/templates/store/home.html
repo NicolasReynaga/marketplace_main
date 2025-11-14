@@ -5,6 +5,12 @@
 {% block content %}
 <div class="mt-2 mb-4 px-4 py-2">
     <h1 class="text-center mb-4">
+        {% if request.user.is_authenticated %}
+        <h1 class="text-center mb-4">Nuevos Productos - {{request.user.username}}</h1>
+        {% endif %}
+        {% if request.user.is_authenticated %}
+        <h1 class="text-center mb-4">Nuevos Productos</h1>
+        {% endif %}
         Nuevos Productos
     </h1>
     <div class="container text-center">
