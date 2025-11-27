@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-(ydc-ev9@h4ofb*t!2xw765e3s_bzk4v2sdk3qa5dp&f*ibtbu
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['alana-monomolecular-shaunna.ngrok-free.dev']
 
 LOGIN_URL = '/store/login/'
 LOGIN_REDIRECT_URL = '/'
