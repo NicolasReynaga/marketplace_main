@@ -1,6 +1,123 @@
 "# marketplace_main R" 
 
-# Archivos Django
+# Integrantes 
+- Oscar Madrazo Vázquez
+- Carlos Gabriel Mexta Cordero 
+- William Alexandro Diaz Diaz   
+- Reynaga Garcia Nicolas
+- Javier Chavez Rodriguez
+  
+---
+
+# Índice 
+1. [Introducción](#introducción)  
+2. [Explicación de cada comando utilizado](#explicación-de-cada-comando-utilizado)  
+3. [Arquitectura MVT](#arquitectura-mvt)  
+4. [Como están ligados los archivos del marketplace_main](#como-están-ligados-los-archivos-del-marketplace_main)  
+5. [Archivos Django y Ejecución del proyecto](#archivos-django-y-ejecución-del-proyecto)   
+7. [Conclusión](#conclusión)  
+
+---
+
+# Introducción 
+
+## ¿Por qué utliizar Django para desarrollar aplicaciones web? desarrollar aplicaciones web?
+Django lo utilizamos en la realización de aplicaciones web por la razón de que este hace el trabajo más rápido, organizado y seguro, sin mencionar que es una de las formas muy conocidas en el mundo de la programación, ya que este hace que los desarrolladores puedan centrarse más en el apartado lógico, además de que tiene grandes documentaciones que los programadores nuevos pueden utilizar (los experimentados también), esto hace “Django” una de las herramientas más favorables de utilizar y más por los nuevos que van entrando en este terreno, ya que utiliza el lenguaje de programación Python, lo que hace más sencillo de aprender a utilizar esta herramienta si se tiene previa experiencia e incluso con una mínima idea (con prácticas). Veremos posteriormente una demostración de la creación de un proyecto dentro de esta poderosa herramienta
+
+---
+
+# Explicación de cada comando utilizado
+
+- cd “nombre”: Se utiliza para utilizar la carpeta
+ con ese nombre u ubicación
+- dir: Sirve para observar lo que tiene dentro una
+ carpeta (cuando estas dentro de ella)
+- cls: Limpia la pantalla del cmd
+- md “nombre”: Sirve para crear un documento o
+ carpeta
+-  python -m venv venv: Sirve para crear un
+ ambiente virtual
+- venv\Scripts\activate: Se utiliza para activar el
+ ambiente virtual
+- pip install django: Funciona para instalar Django
+ en tu computador (pip es el instalador de
+ paquetes de python)
+-  “nombre app” -m pip install –upgrade: aqui
+ actualizamos la aplicacion, como puede ser
+ python
+- django-admin startproject “nombre”: Sirve para
+ crear un proyecto y que genere carpetas y
+ archivos necesarios dentro de esta.
+- python manage.py runserver: Sirve para
+ prender el servidor local y poder ver el proyecto
+ en funcionamiento (copiando la URL que nos da
+ el cmd al navegador).
+- code . : Sirve para abrir la aplicación de Visual Studio
+ Code y poder modificar/crear los códigos.
+- python manage.py startapp store: Sirve para crear un a
+ aplicación dentro de tu proyecto creado. (donde esta
+ store, se puede cambiar a otro nombre).
+- python manage.py migrate: Sirve para crear o actualizar
+ base de datos para que se apliquen a tu proyecto.
+-  python manage.py makemigrations: Detecta los cambios
+ que hiciste en tus modelos y actualiza la base de datos.
+- python manage.py createsuperuser: Crea un usuario
+ administrador, con nombre, correo y contraseña
+ personalizados para acceder al admin panel.
+- pip freeze > requirements.txt: Guarda una lista de las
+ dependencias de tu proyecto con sus versiones.
+- git clone: Git clone sirve para copar un repositorio
+ remoto a la computadora, creando una carpeta con todos
+ los recursos que se guardan previamente al git hub.
+- git status .: Git status nos muestra el estado del
+ repositorio y que nos hace falta guardar.
+- git add .: Sirve para Preparar todos los archivos que
+ posteriormente vamos a guardar y decirle que aliste los
+ sitios donde los guardara.
+- git commit -m: Git commit srve para guardar un
+ comentario donde se guarden los recursos en el git hub.
+- git push: Con git push enviamos todos los recursos a la
+ nube de la pagina git hub para tener todos los cambios ya
+ guardados.
+
+---
+
+# Arquitectura MVT
+
+## Diagrama y Explicación de la estructura de MVT
+
+<img width="743" height="899" alt="image" src="https://github.com/user-attachments/assets/22c62d72-f80d-4506-9c25-f8c2d19d4d65" />
+
+## Explicación de la Explicación de la arquitectura MVT arquitectura MV
+
+Es un patrón que utiliza Django para organizar aplicaciones
+ web y es importante porque se encarga de las bases de datos y
+ la estructura de los datos. Se puede observar que se separa por
+ puntos, por ejemplo, el modelo trabaja con la información, la
+ vista que contiene la lógica del programa, por así decirlo
+ recibe las peticiones de los usuarios y es la mente detrás de la
+ página, obtiene toda la información necesaria del modelo y la
+ envía a la plantilla, aquí es donde entra template, que este
+ encargado de la parte visual, donde se muestra toda la
+ información y todo lo que el usuario observara por medio de
+ HTML. 
+En otras palabras, el modelo se encarga de recabar toda la
+ información necesaria, la vista se encarga de organizar toda
+ esa información del modelo para así organizarlo en el HTML
+ que ya sería la parte del template y esto servirá para la parte
+ visual de la página, ya que sin el template no se podría ver
+ visualmente la información para el usuario.
+
+---
+
+# Como están ligados los archivos del marketplace_main
+
+<img width="753" height="577" alt="image" src="https://github.com/user-attachments/assets/f912c8ea-b5b3-4982-b8ed-ee5648430355" />
+
+
+---
+
+# Archivos Django y Ejecución del proyecto
 
 ## Views.py 
 
@@ -667,9 +784,79 @@ Paginas corriendo
 <img width="975" height="453" alt="image" src="https://github.com/user-attachments/assets/49ee051a-7e21-403a-9278-e410d912b590" />
 <img width="975" height="548" alt="image" src="https://github.com/user-attachments/assets/daed8c66-fa71-4818-a9b1-35b8a476a6f1" />
 
+---
 
+# Conclusión
 
+Desde el inicio del parcial, el profesor se encargó de explicarnos y
+ darnos una introducción al framework Django, algo que al principio
+ no conocíamos para nada, pero que fue más sencillo de entender
+ conforme avanzábamos cada clase. Empezamos desde la creación del
+ ambiente virtual para poder llegar a la página principal, hasta la
+ creación del proyecto llamado Marketplace_main, la creación de un
+ superuser para poder organizar los catálogos e ítems desde el panel de
+ administración, y el entendimiento de archivos importantes como
+ settings.py, urls.py, models.py, views.py, además del uso de la base
+ de datos y comandos SQL que nos ayudaron en todo el desarrollo del
+ proyecto.
+ Marketplace_main fue un proyecto interesante porque nos sirvió
+ como una base para aprender lo más esencial de Django. Durante el
+ proceso fuimos entendiendo varios conceptos y herramientas que
+ vamos a necesitar para proyectos más grandes en el futuro. También
+ conocimos cómo funciona el patrón MVT (Modelo, Vista y Plantilla),
+ que es lo que usa Django para manejar cómo se muestra y organiza la
+ información en la página. Además, instalamos librerías como Pillow,
+ que sirve para manejar imágenes, y esto nos permitió crear una página
+ más interactiva para el usuario al mostrar imágenes, descripción y
+ precio de los productos en la vista principal que programamos en
+ views.py.
 
+  Por otra parte, trabajamos en el archivo models.py para crear las
+ categorías y los ítems del marketplace, y después registramos estos
+ modelos en admin.py para poder verlos y gestionarlos en el panel de
+ Django. Gracias a esto pudimos agregar elementos directamente
+ desde el administrador y organizarlos como queríamos. En general,
+ este proyecto nos ayudó mucho a entender cómo funciona Django
+ desde cero y a tener una base sólida para seguir aprendiendo y
+ creando páginas web más completas en el futuro.
+ En conclusión, gracias a este proyecto que sirve como una tienda
+ virtual, logramos conocer más archivos, conceptos y atajos que
+ anteriormente no conocíamos y consideramos que esto nos ayudara
+ para poder crear un proyecto propio y lo mejor, sin la necesidad de
+ que sea un proyecto estático, ya que contaremos con habilidades
+ básicas de bases de datos decentes, manejo de archivos multimedia,
+ organización de modelos como catálogos e ítems que fueron
+ importantes en el proyecto Marketplace_main y cada uno de los
+ conocimientos de estos archivos nos servirán para el proyecto que se
+ nos pida en un futuro, al igual que aprendimos algo importante e
+ interesante que pensábamos no usaríamos tanto, pero el uso del
+ archivo urls.py nos ayudara mucho para redirigir las rutas de las
+ páginas donde el usuario estará interactuando y consideramos que ese
+ es un toque versátil que nos ayudará para proyectos a futuro con
+ Django.
+
+ La mejora del proyecto agregando mas documentos htrml y
+ documentos python que nos ayuden para la elaboración de la pagina
+ es una manera de poder crear una pagina robusta y con fundamentos
+ que servirán como herramientas para el futuro en la programación. 
+Las mejoras fortalecieron en que ahora podemos ver los detalles de
+ los productos, podemos iniciar sesión en la pagina, registrarnos y con
+ eso poder agregar artículos a la pagina para un crecimiento de la
+ misma, al igual que podemos agregar los items desde la pagina sin
+ necesidad de tener que entrar al django admin y por otra parte,
+ tenemos funciones como el contacto y el logout que es para salir de la
+ cuenta y evitar que algún otro usuario pueda entrar a nuestra cuenta
+ en django, así evitando algún al entendido entre usuarios.
+ Alguna de las funciones que resultaron interesantes fue la de
+ @login_required, ya que asegura que las acciones solamente se
+ realicen dentro de una sesión activa y asegurar la protección de datos
+ del usuario. 
+Por ultimo, la manera en la que se organizaron los archivos y las rutas
+ nos beneficio ya que ahora se puede navegar en toda la pagina web
+ sin ningún problema y sin tener el problema de que aun no se ha
+ colocado la ruta de paginas que deseemos navegar, ahora se pueden
+ disfrutar de todas las funciones y apartados de la pagina gracias al
+ urls.py y la organización de  los archivos previos.
 
 
 
